@@ -6,11 +6,10 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Notes',
       initialRoute: '/',
-      theme: ThemeData(
-        primarySwatch: Colors.red
-      ),
+      theme: ThemeData(primarySwatch: Colors.red),
       routes: {
         '/': (context) => HomePage(),
         '/create-note': (context) => CreateNotePage(),
